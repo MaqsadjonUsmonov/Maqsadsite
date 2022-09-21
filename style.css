@@ -10,6 +10,7 @@
     background-size: cover;
     position: relative;
     background-position: center;
+    overflow: hidden;
 }
 .eduford{
     color: white;
@@ -131,7 +132,7 @@ nav #fa{
 
 }
 h1{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
 }
 p{
@@ -145,6 +146,7 @@ p{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    padding: 0 150px;
 }
 .course-col{
     flex-basis: 31%;
@@ -157,7 +159,7 @@ p{
 }
 h3{
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     margin: 10px 0;
 }
 .course-col:hover{
@@ -165,7 +167,7 @@ h3{
 }
 @media(max-width:700px){
     .row{
-        flex-direction: column;
+        flex-direction: column; 
     }
 }
 
@@ -180,13 +182,16 @@ h3{
 }
 .campus-col{
     flex-basis: 32%;
+    height: 400px;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
 .campus-col img{
-
+height: 100%;
+width: 100%;
+    display: block;
 }
 .layer{
     background: transparent;
@@ -199,5 +204,131 @@ h3{
 }
 .layer:hover{
     background: #ff2e2eb3;
-    
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.7s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*-------- facilites --------*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+.facilites-col{
+    flex-basis: 500px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilites-col img{
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+.facilites-col p{
+    padding: 0;
+}
+.facilites-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 28px;
+}
+
+/*----- testimons-----*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: block;
+}
+.testimonials-col img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonials-col p{
+    padding: 0;
+}
+.testimonials-col h3{
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+.testimonials-col i{
+    color: #f44336;
+}
+@media(max-width:700;){
+    .testimonials-col img{
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+/*----- call -----*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image:url("./img/dars2.jpg");
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width:700px;){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*----- Footer -----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons i{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px;
+}
+.fa-heart-o{
+    color: #f44336;
 }
